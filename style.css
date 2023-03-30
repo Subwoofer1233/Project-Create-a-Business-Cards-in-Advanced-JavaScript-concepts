@@ -1,0 +1,33 @@
+body{
+    margin: 0px;
+    background-color: #bdbcaa;
+    width: 1920px;
+    height: 1080px;
+    color: white;
+}
+p{
+    color: black;
+    font-size: 20px;
+}
+h2{
+    color: black;
+    font-size: 35px;
+}
+.img{
+    background-color: #bdbcaa;
+    width: 1500px;
+    max-height: 350px;
+}
+/* .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.card h2{
+    /* display: inline-block; */
+    transform: translate(200px, 300px);
+}
+.card p{
+    /* display: inline-block; */
+    transform: translate(200px, 300px);
+}
