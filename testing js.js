@@ -1,22 +1,21 @@
-// fetch("https://iskarr.github.io/austindonovan.github.io/api/business.json")
-
-// .then((response) => response.json())
-// .then((jsObject) => {
-// console.log(jsObject);
-// })
-
-const URL =
-"https://iskarr.github.io/austindonovan.github.io/api/business.json";
-
+/////////////////////////
+//gets all the html stuff for use in the loop later
 let cards = document.querySelector("div.cards");
 let para = document.createElement("p");
+/////////////////////////
 
+/////////////////////////
+//gets api from online
+const URL ="https://iskarr.github.io/austindonovan.github.io/api/business.json";
 fetch(URL)
 .then((response) => response.json())
 .then((jsObject) => {
 let business = jsObject.business;
 console.log(business)
+/////////////////////////
 
+/////////////////////////
+// loops over everything and adds everything to html using
 for (let i = 0; i < business.length; i++) {
     console.log(business[i].name)
 
@@ -45,6 +44,6 @@ for (let i = 0; i < business.length; i++) {
     img.src = 'https://www.pngall.com/wp-content/uploads/4/Blank-Playing-Card.png';
     card.appendChild(img);
     img.className = "img"
-
-   
-}});
+    }
+});
+/////////////////////////
